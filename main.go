@@ -1,13 +1,18 @@
 package main
 
-import "log"
-import "fiber/Routes"
-import "github.com/gofiber/fiber/v2"
+import (
+    "log"
+    "fiber/Routes"
+    "github.com/gofiber/fiber/v2"
+    "fiber/Config"
+    
+)
 
 func main() {
     app := fiber.New();
 
-    routes.SetupRoutes(app)
+    Config.Connect()
+    Routes.SetupRoutes(app)
 
     log.Fatal(app.Listen(":8000"))
 }

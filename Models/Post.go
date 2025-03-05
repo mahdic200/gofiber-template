@@ -1,12 +1,11 @@
-package Models
+package models
 
 import "time"
 
 type Post struct {
-    id uint
-    name string
-    password string
-    created_at time.Time
-    updated_at time.Time
-
+    Id uint `gorm:"primaryKey"`
+    Name string
+    Password string `gorm:"size:255"`
+    Created_at time.Time
+    Updated_at time.Time
 }

@@ -1,5 +1,0 @@
-package Controllers
-
-func mahdi() {
-    
-}

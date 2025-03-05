@@ -1,12 +1,11 @@
-package Models
+package models
 
 import "time"
 
 type User struct {
-    id uint
-    name string
-    password string
-    created_at time.Time
-    updated_at time.Time
-
+    Id uint `json:"id" gorm:"not null;primaryKey"`
+    Name string `json:"name" gorm:"size:255"`
+    Password string `json:"password" gorm:"size:255"`
+    Created_at time.Time `json:"created_at"`
+    Updated_at time.Time `json:"updated_at"`
 }
