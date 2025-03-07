@@ -1,14 +1,16 @@
 package UserController
 
 import (
-    "crypto/rand"
-    db "fiber/Config"
-    "fiber/Models"
-    "fmt"
-    "strings"
+	"crypto/rand"
+	"fmt"
+	"strings"
 
-    // "time"
-    "github.com/gofiber/fiber/v2"
+	db "github.com/mahdic200/c200GOBackend/Config"
+	models "github.com/mahdic200/c200GOBackend/Models"
+
+	"time"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 func Index(c *fiber.Ctx) error {
@@ -18,7 +20,7 @@ func Index(c *fiber.Ctx) error {
 }
 
 func Store(c *fiber.Ctx) error {
-    // tx := db.DB.Begin()
+    tx := db.DB.Begin()
     data := new(models.User)
     err := c.BodyParser(data)
     if err != nil {
@@ -45,13 +47,12 @@ func Store(c *fiber.Ctx) error {
         })
     }
 
-    // user := models.User {
-    //     Name: data.Name,
-    //     Password: data.Password,
-    //     Created_at: time.Time{},
-    // }
-    // db.DB.Create(&user)
-    // tx.Create(&user)
+    user := models.User {
+        First_name: data.First_name,
+        Password: data.Password,
+        Created_at: time.Time{},
+    }
+    tx.Create(&user)
     return c.Status(200).JSON(fiber.Map{
         "message": "user created successfully !",
     })

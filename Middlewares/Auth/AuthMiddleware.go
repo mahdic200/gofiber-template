@@ -1,10 +1,11 @@
 package Auth
 
 import (
-    "strings"
+	"strings"
 
-    "github.com/gofiber/fiber/v2"
-    "fiber/Utils"
+	"github.com/mahdic200/c200GOBackend/Utils"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 func AuthMiddleware(c *fiber.Ctx) error {

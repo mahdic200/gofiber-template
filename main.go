@@ -1,11 +1,12 @@
 package main
 
 import (
-    "log"
-    "fiber/Routes"
-    "github.com/gofiber/fiber/v2"
-    "fiber/Config"
-    
+	"log"
+
+	"github.com/mahdic200/c200GOBackend/Config"
+	"github.com/mahdic200/c200GOBackend/Routes"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
@@ -16,4 +17,3 @@ func main() {
 
     log.Fatal(app.Listen(":8000"))
 }
-

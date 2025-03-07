@@ -38,8 +38,15 @@ JWT_SECRET=dZvG+ecNWSRb6WNAX6l/sC2gh2qzlLl3
 go run main.go
 ```
 
+## Testing
 
-## building
+```bash
+go test ./tests/...
+```
+
+
+
+## Building
 
 autobuild :
 
