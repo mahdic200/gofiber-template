@@ -2,8 +2,8 @@ package UserValidator
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/mahdic200/c200GOBackend/Middlewares"
-	"github.com/mahdic200/c200GOBackend/Validations/Rules"
+	"github.com/mahdic200/gofiber-template/Middlewares"
+	"github.com/mahdic200/gofiber-template/Validations/Rules"
 )
 
 // map[string]([](Rules.ValidationRule))

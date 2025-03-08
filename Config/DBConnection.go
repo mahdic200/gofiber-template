@@ -3,7 +3,7 @@ package Config
 import (
 	"fmt"
 
-	"github.com/mahdic200/c200GOBackend/Models"
+	"github.com/mahdic200/gofiber-template/Models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/mahdic200/c200GOBackend/Providers/Validation"
+	"github.com/mahdic200/gofiber-template/Providers/Validation"
 )
 
 func TestGetValLan(t *testing.T) {

@@ -1,11 +1,11 @@
 package Routes
 
 import (
-	"github.com/mahdic200/c200GOBackend/Controllers/AuthController"
-	"github.com/mahdic200/c200GOBackend/Controllers/UserController"
-	"github.com/mahdic200/c200GOBackend/Validations/Admin/UserValidator"
+	"github.com/mahdic200/gofiber-template/Controllers/AuthController"
+	"github.com/mahdic200/gofiber-template/Controllers/UserController"
+	"github.com/mahdic200/gofiber-template/Validations/Admin/UserValidator"
 
-	// "github.com/mahdic200/c200GOBackend/Middlewares/Auth"
+	// "github.com/mahdic200/gofiber-template/Middlewares/Auth"
 
 	"github.com/gofiber/fiber/v2"
 )

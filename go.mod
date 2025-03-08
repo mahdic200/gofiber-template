@@ -1,4 +1,4 @@
-module github.com/mahdic200/c200GOBackend
+module github.com/mahdic200/gofiber-template
 
 go 1.24.0
 

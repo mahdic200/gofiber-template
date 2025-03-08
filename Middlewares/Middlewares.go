@@ -4,7 +4,7 @@ import (
 	// "encoding/json"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/mahdic200/c200GOBackend/Validations/Rules"
+	"github.com/mahdic200/gofiber-template/Validations/Rules"
 )
 
 func ValidationMiddleware(schema map[string]([](Rules.ValidationRule))) (func(c *fiber.Ctx) error) {
