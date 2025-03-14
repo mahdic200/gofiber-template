@@ -7,6 +7,7 @@ REM Command file for Sphinx documentation
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
+set SPHINXAUTOBUILD=sphinx-autobuild
 set SOURCEDIR=source
 set BUILDDIR=build
 
@@ -30,6 +31,9 @@ goto end
 
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+
+:dev
+%SPHINXAUTOBUILD% %SOURCEDIR% %BUILDDIR% %O%
 
 :end
 popd
